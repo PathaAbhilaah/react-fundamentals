@@ -1,0 +1,32 @@
+.container{
+  width: 500px;
+  margin: 20px auto;
+  background-color: azure;
+}
+
+.passwordText{
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.passwordContainer{
+  width: 90%;
+  padding: 5px 10px;
+}
+
+.password{
+  width: 75%;
+  height: 30px;
+}
+
+.copyButton{
+  background-color: blue;
+  color: white;
+}
+
+.conditionsContainer{
+  width: 90%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
