@@ -1,0 +1,128 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+#root {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  border: 1px solid black;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mainInputContainer {
+  border: 1px solid black;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.labelContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  width: 80%;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.selectContainer {
+  width: 20%;
+  border:none;
+  background-color: #cedee7;
+  border-radius: 10px;
+  padding: 3px;
+  &:focus{
+    border: none
+  }
+  &:hover{
+    border: none
+  }
+}
+
+.swapButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 20px);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.swapButton:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.convertButton {
+  margin-top: 20px;
+  background-color: blue;
+}
