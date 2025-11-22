@@ -1,0 +1,26 @@
+.headerContainer{
+  width:100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.pageNamesContainer{
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.containerItem{
+  padding: 10px;
+  border-radius: 15px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.logo{
+  width: 100px;
+  height:80%
+}
