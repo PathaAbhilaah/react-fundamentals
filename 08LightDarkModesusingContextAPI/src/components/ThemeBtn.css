@@ -1,0 +1,71 @@
+.theme-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.theme-input {
+  display: none;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background-color: #cccccc;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  margin-right: 12px;
+}
+
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.theme-input:checked + .toggle-switch {
+  background-color: #2563eb;
+}
+
+.theme-input:checked + .toggle-switch::after {
+  transform: translateX(20px);
+  border-color: #ffffff;
+}
+
+.theme-input:focus + .toggle-switch {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.toggle-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+  white-space: nowrap;
+}
+
+/* Dark mode styles */
+:root.dark .toggle-switch {
+  background-color: #4b5563;
+}
+
+:root.dark .toggle-text {
+  color: #d1d5db;
+}
+
+.dark{
+    background-color: #1f2937;
+}
+
+.light{
+    background-color: white;
+}
